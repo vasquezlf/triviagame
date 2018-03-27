@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Semantic-UI</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">    
+    <!-- Semantic-UI CSS -->
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css"> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    
+  </head>
+
+  <body>
+    
+    <!-- NAV -->
+    <div class="ui sidebar vertical left inverted labeled main icon menu">
+        <a href="https://vasquezlf.github.io/" class="item"><i class="icon home"></i>Home</a>
+        <!-- <a href="#" class="item"><i class="icon code"></i>Portfolio</a> -->
+        <div class="item">
+          <div class="header">Portfolio</div>
+          <div class="menu">
+            <a href='https://vasquezlf.github.io/hangman' class="item">Hangman</a>
+            <a href='https://vasquezlf.github.io/crystalcollector' class="item">Crystal Collector</a>
+            <a href='https://vasquezlf.github.io/triviagame' class="item">Trivia Game</a>
+          </div>
+        </div>
+      </div>
+      <div class="ui basic inverted icon top fixed menu">
+        <a class="item" id="menu-toggle">
+          <i class="sidebar icon"></i>
+          Menu
+        </a>
+        <div class="right menu">
+            <a class="item">Lorenzo Vasquez | Full-Stack Developer</a>
+          </div>
+      </div>
+    <div class="pusher">
+      <!-- HEADER/BODY -->
+    <div class="ui container site-content">
+        <div class="ui centered relaxed grid">
+          <!-- 1.  Header -->
+          <div class="row">
+            <div class="ui eight wide column">
+              <h1 class="ui centered  header ">Totally Trivial Trivia!</h1>
+            </div>
+          </div>
+          <!-- 2. Start Button -->
+          <div class="row">
+            <div class="ui four wide column">
+              <button class="ui circular fluid basic button teal" id="button-start">Start</button>
+            </div>
+          </div>
+  
+        
+  
+          <!-- 3. Dynamically insert row here | TEST row for now by hard coding -->
+          <!-- ********* BEGIN REMOVE ********* -->
+          <div class="row" id="trivia-question">
+              <div class="ui twelve wide column">
+                  <div class="ui raised segment fluid items" id='trivia-question-segment'>
+                    <div class="item" id='trivia-question-segment-item'>
+                      <div class="content" id='trivia-question-segment-item-content'>
+                        <h3 class="header" id='trivia-question-segment-item-content-header'>Where is the Great Wall of China?</h3>
+                        <div class="ui list" id="trivia-question-segment-item-content-list">
+                            <div class="item"><button class="ui left floated teal circular button">A.</button><span id="trivia-question-segment-item-content-list-item-span">States of America</span>
+                            </div>
+                            <div class="item"><button class="ui left floated teal circular button">B.</button><span>Japan</span>
+                            </div>
+                            <div class="item"><button class="ui left floated teal circular button">C.</button><span>Democratic People's Republic of China</span>
+                            </div>
+                            <div class="item"><button class="ui left floated teal circular button">D.</button><span>Just a really long line for testing purposes really I should change this.</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div> 
+            <!--******** END REMOVE **********-->
+              <!-- 4. Timer Display  -->
+          <div class="row">
+              <div class="ui four wide column">
+                 <h3 class="ui centered header" id="timer-label"><span class="header" id="timer-display">00:00</span></h3>
+              </div>
+            </div>
+        </div>  <!-- END grid container -->
+      </div>  <!-- END UI container -->
+  
+      <!-- FOOTER -->
+      <!-- <footer class="ui inverted vertical bottom fixed footer segment">
+        <h2>TEST</h2>
+      </footer> -->
+    </div>
+
+    
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/javascript/game.js"></script>
+    <!-- Timer -->
+    <script src="assets/javascript/timer.js"></script>
+    
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    
+    <!-- semantic js -->
+    <script src="semantic/dist/semantic.min.js"></script>
+  </body>
+</html>
+

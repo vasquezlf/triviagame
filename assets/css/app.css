@@ -1,0 +1,49 @@
+/****************************** GENERAL *******************************/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
+}
+
+.ui.container {
+    /* position: relative; */
+    /* height: 100%; */
+    /* justify-self: center; */
+    /* top: -10%; */
+    margin: auto 0;
+}
+
+
+
+/****************************** NAV ***********************************/
+
+
+
+
+/****************************** HEADER ********************************/
+.ui.centered.header {
+    /* margin: 1.25em; */
+}
+
+
+
+
+/****************************** BODY **********************************/
+
+.pusher {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+
+/****************************** FOOTER ********************************/
+/* footer {
+    position: relative;
+    /* bottom: -35%; */
+    /* z-index: 1;
+} */ 
